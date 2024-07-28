@@ -8,45 +8,20 @@ Este repositório contém a documentação para uma API que simula o aplicativo 
 O objetivo dessa API é permitir o acesso a informações importantes da conta do usuário, como:
 
 - Nome do usuário
-- Saldo disponível
-- Limite do cartão
-- Número da conta
-- Número do cartão
+- Criação de Usuário
 
 **Endpoints:**
 
 A API possui os seguintes endpoints:
 
-- **`/user`**: Retorna as informações básicas do usuário, incluindo nome e dados da conta.
-- **`/balance`**: Retorna o saldo disponível na conta do usuário.
-- **`/limit`**: Retorna o limite do cartão do usuário.
+- **`/users`**: Retorna as informações básicas do usuário, incluindo nome e dados da conta.
+- **`users/{id}**: Retorna a pesquisa feita pelo id do usuário.
 
 **Exemplos de requisições:**
 
-**GET `/user`**:
+**GET `/users`**:
 
-```
-{
-  "name": "Nome do Usuário",
-  "account": "Ag 0000 Cc 00000000-0"
-}
-```
-
-**GET `/balance`**:
-
-```
-{
-  "balance": "1.324,64"
-}
-```
-
-**GET `/limit`**:
-
-```
-{
-  "limit": "2.324,64"
-}
-```
+![image](https://github.com/user-attachments/assets/79e7c189-cfa4-4e82-8d7f-0b030281d2ae)
 
 **Observações:**
 
@@ -60,9 +35,6 @@ A API possui os seguintes endpoints:
 - Implementar a lógica de acesso aos dados do usuário (simulando a interação com o aplicativo).
 - Criar documentação detalhada da API, incluindo informações sobre endpoints, métodos, parâmetros e respostas.
 - Implementar testes unitários e de integração para garantir a qualidade da API.
-
-**Esperamos que esta documentação seja útil para o desenvolvimento da sua API!**
-
 
 ## Diagrama de Classes (Domínio da API)
 
