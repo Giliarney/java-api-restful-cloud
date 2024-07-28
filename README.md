@@ -21,7 +21,38 @@ A API possui os seguintes endpoints:
 
 **GET `/users`**:
 
-![image](https://github.com/user-attachments/assets/79e7c189-cfa4-4e82-8d7f-0b030281d2ae)
+```json
+{
+  "id": 1,
+  "name": "Fulano",
+  "account": {
+    "id": 1,
+    "number": "000000000-0",
+    "agency": "0000",
+    "balance": 0,
+    "limit": 10000
+  },
+  "card": {
+    "id": 1,
+    "number": "xxxx xxxx xxxx 0000",
+    "limit": 10000
+  },
+  "features": [
+    {
+      "id": 1,
+      "icon": "URL",
+      "description": "Descrição da Feature"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "icon": "URL",
+      "description": "Descrição da Novidade"
+    }
+  ]
+}
+```
 
 **Observações:**
 
