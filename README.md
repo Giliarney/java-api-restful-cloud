@@ -1,17 +1,67 @@
-# Santander Dev Week 2023
+## API Santander - Documentação
 
-Java RESTful API criada para a Santander Dev Week.
+Este repositório contém a documentação para uma API que simula o aplicativo Santander mostrado na imagem.
+https://www.figma.com/design/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?node-id=1421-432&t=G7FeJ8Iutzr178eO-4
+**Objetivo:**
 
-## Principais Tecnologias
- - **Java 17**: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
- - **Spring Boot 3**: Trabalharemos com a mais nova versão do Spring Boot, que maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
- - **Spring Data JPA**: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
- - **OpenAPI (Swagger)**: Vamos criar uma documentação de API eficaz e fácil de entender usando a OpenAPI (Swagger), perfeitamente alinhada com a alta produtividade que o Spring Boot oferece;
- - **Railway**: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
+O objetivo dessa API é permitir o acesso a informações importantes da conta do usuário, como:
 
-## [Link do Figma](https://www.figma.com/file/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?type=design&node-id=1421%3A432&mode=design&t=6dPQuerScEQH0zAn-1)
+- Nome do usuário
+- Saldo disponível
+- Limite do cartão
+- Número da conta
+- Número do cartão
 
-O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
+**Endpoints:**
+
+A API possui os seguintes endpoints:
+
+- **`/user`**: Retorna as informações básicas do usuário, incluindo nome e dados da conta.
+- **`/balance`**: Retorna o saldo disponível na conta do usuário.
+- **`/limit`**: Retorna o limite do cartão do usuário.
+
+**Exemplos de requisições:**
+
+**GET `/user`**:
+
+```
+{
+  "name": "Nome do Usuário",
+  "account": "Ag 0000 Cc 00000000-0"
+}
+```
+
+**GET `/balance`**:
+
+```
+{
+  "balance": "1.324,64"
+}
+```
+
+**GET `/limit`**:
+
+```
+{
+  "limit": "2.324,64"
+}
+```
+
+**Observações:**
+
+- Esta API é apenas um exemplo e não possui conexão com o aplicativo real do Santander.
+- A implementação da API dependerá da linguagem de programação escolhida e das ferramentas disponíveis.
+- É importante garantir a segurança da API, incluindo a autenticação e autorização de usuários.
+
+**Próximos passos:**
+
+- Implementar a API utilizando a linguagem de programação escolhida.
+- Implementar a lógica de acesso aos dados do usuário (simulando a interação com o aplicativo).
+- Criar documentação detalhada da API, incluindo informações sobre endpoints, métodos, parâmetros e respostas.
+- Implementar testes unitários e de integração para garantir a qualidade da API.
+
+**Esperamos que esta documentação seja útil para o desenvolvimento da sua API!**
+
 
 ## Diagrama de Classes (Domínio da API)
 
@@ -52,11 +102,3 @@ classDiagram
   User "1" *-- "1" Card
   User "1" *-- "N" News
 ```
-
-## IMPORTANTE
-
-Este projeto foi construído com um viés totalmente educacional para a DIO. Por isso, disponibilizamos uma versão mais robusta dele no repositório oficial da DIO:
-
-### [digitalinnovationone/santander-dev-week-2023-api](https://github.com/digitalinnovationone/santander-dev-week-2023-api)
-
-Lá incluímos todas os endpoints de CRUD, além de aplicar boas práticas (uso de DTOs e refinamento na documentação da OpenAPI). Sendo assim, caso queira um desafio/referência mais completa é só acessar 👊🤩
