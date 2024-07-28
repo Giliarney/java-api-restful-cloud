@@ -1,7 +1,8 @@
 ## API Santander - Documentação
 
 Este repositório contém a documentação para uma API que simula o aplicativo Santander mostrado na imagem.
-![Imagem do aplicativo Santander](https://www.figma.com/design/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?node-id=1421-432&t=G7FeJ8Iutzr178eO-4)
+![Imagem do aplicativo Santander](![image](https://github.com/user-attachments/assets/a391b960-704b-47b5-ac89-c31097d0beb7)
+
 **Objetivo:**
 
 O objetivo dessa API é permitir o acesso a informações importantes da conta do usuário, como:
