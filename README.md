@@ -1,7 +1,7 @@
 ## API Santander - Documentação
 
 Este repositório contém a documentação para uma API que simula o aplicativo Santander mostrado na imagem.
-![Imagem do aplicativo Santander](![image](https://github.com/user-attachments/assets/a391b960-704b-47b5-ac89-c31097d0beb7)
+![image](https://github.com/user-attachments/assets/a391b960-704b-47b5-ac89-c31097d0beb7)
 
 **Objetivo:**
 
